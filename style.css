@@ -1,0 +1,139 @@
+:root {
+   --c-blue: #6eaef7;
+   --c-white: #fff;
+   --c-black: #110;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: var(--c-blue);
+   min-height: 100vh;
+   width: 100vw;
+   font-family: 'Poppins';
+   flex-direction: column;
+   /* font-size: 14px; */
+}
+
+
+
+
+div#modal {
+   /* position: fixed; */
+   inset: 0 auto auto 0;
+   width: min(95vw, 400px);
+   /* height: min(80vh, 400px); */
+   background: #fff;
+   color: #444;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 20px 20px;
+   padding-bottom: 40px;
+   gap: 10px;
+   position: fixed;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -100%);
+   transition: 0.3s ease-in-out;
+   
+
+}
+
+div#modal.open {
+
+
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+div#modal svg.close {
+   fill: #817f7f;
+   margin-left: auto;
+   width: 30px;
+   cursor: pointer;
+}
+
+div#modal svg.email {
+   fill: var(--c-blue);
+   width: min(70%, 90px);
+}
+
+
+div#modal h2 {
+   font-weight: 400;
+   font-size: 25px;
+   text-align: center;
+
+
+}
+
+div#modal p {
+   font-size: 14px;
+   line-height: 2;
+   text-align: center;
+
+   /* margin-top: ; */
+}
+
+div#modal input[type="email"] {
+   width: 100%;
+   outline: none;
+   border: 1px solid #eee;
+   font-size: 14px;
+   padding: 15px 10px;
+   font-family: 'Poppins';
+}
+
+
+a.btn {
+   text-decoration: none;
+   letter-spacing: 1.5px;
+   transition: 0.1s ease-out;
+   text-transform: uppercase;
+   font-weight: 400;
+   padding: 14px 23px;
+
+}
+
+a.btn:hover {
+   padding: 10px 27px;
+   letter-spacing: 2px;
+   /* font-weight: 400; */
+
+}
+
+a.btn.bg-white {
+
+   color: var(--c-blue);
+   background: var(--c-white);
+
+}
+
+a.btn.bg-blue {
+   
+   background: var(--c-blue);
+   color: var(--c-white);
+   /* position: absolute;
+   inset: auto auto 30px auto; */
+   height: auto;
+   margin-top: 1.5rem;
+
+
+}
+
+.bg-white {
+   background: var(--c-white);
+   color: #000;
+}
